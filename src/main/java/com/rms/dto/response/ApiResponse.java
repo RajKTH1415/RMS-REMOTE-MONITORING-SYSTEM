@@ -1,9 +1,11 @@
-package com.rms.dto.apiSuccessResponse;
+package com.rms.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -14,4 +16,6 @@ public class ApiResponse<T> {
     private int status;
     private String message;
     private T data;
+    private String path;
+    private LocalDateTime timestamp;
 }

@@ -1,10 +1,11 @@
-package com.rms.dto.apiValidationErrorResponse;
+package com.rms.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @Data
@@ -16,4 +17,6 @@ public class ValidationErrorResponse {
     private int status;
     private String message;
     private Map<String, String> validationErrors;
+    private String path;
+    private LocalDateTime timestamp;
 }
