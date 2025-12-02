@@ -4,11 +4,12 @@ package com.rms.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "DailyOncePollData")
+@Table(name = "DailyOncePollData", schema="dbo")
 public class DailyOncePollDataEntity {
 
     @Id

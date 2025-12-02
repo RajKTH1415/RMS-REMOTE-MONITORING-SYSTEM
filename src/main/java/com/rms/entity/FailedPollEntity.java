@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "FailedPoll")
+@Table(name = "FailedPoll",schema="dbo")
 public class FailedPollEntity {
 
     @Id
